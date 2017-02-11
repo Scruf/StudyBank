@@ -1,0 +1,1 @@
+web: gunicorn Repricer.wsgi --log-file -
