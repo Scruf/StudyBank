@@ -17,15 +17,17 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
-
+"""
+AccountEndpoint=https://studybank.documents.azure.com:443/;AccountKey=wUzpHtdKXGnmCGLi7NDFqb3qmA0MArLAVoJuspauNlcJ9XLcEPiJbswNMQSbkiwvviXl898mFbHTgq4gaIPuPw==;
+"""
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': path.join(PROJECT_ROOT, 'db.sqlite3'),
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'da4f92t4qucovt',
+        'USER': 'crfobstgbbkihi',
+        'PASSWORD': '239d5e5862425fcb29ce7864769277f7cc6b2d400030f6f891baafe6a295dd1e',
+        'HOST': 'ec2-107-20-193-74.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -122,7 +124,7 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
-
+#AccountEndpoint=https://studybank.documents.azure.com:443/;AccountKey=22JbzzRm241pmuBIVt5ex8mmixV2j6OvTitx52EhIf5ds5EkVSu4PbMHUTdDIvR00QAzIZvq6tuqKmebMNiRRA==;
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -130,7 +132,8 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'studybank.apps.StudybankConfig'
+    'studybank.apps.StudybankConfig',
+    'rest_framework'
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
