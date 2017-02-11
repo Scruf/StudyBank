@@ -1,1 +1,1 @@
-web: gunicorn Repricer.wsgi --log-file -
+web: gunicorn DjangoApp.wsgi --log-file -
