@@ -2,12 +2,7 @@
 Definition of urls for DjangoApp.
 """
 
-from datetime import datetime
-from django.conf.urls import url
-from app.forms import BootstrapAuthenticationForm
-from app.views import *
-from app.models import *
-from django.contrib.auth.views import *
+from django.conf.urls import include,url
 
 
 # Uncomment the next lines to enable the admin:
@@ -23,5 +18,6 @@ urlpatterns = [
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^',include('studybank.urls')),
+    # url(r'^admin/', include(admin.site.urls)),
 ]
