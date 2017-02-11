@@ -9,7 +9,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = (
-    'localhost',
+    'ancient-plateau-96448.herokuapp.com',
 )
 
 ADMINS = (
